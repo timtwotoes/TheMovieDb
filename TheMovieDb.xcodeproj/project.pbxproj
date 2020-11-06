@@ -67,6 +67,7 @@
 		E9E585712555C5760084C71D /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		E9E585732555C59E0084C71D /* TheMovieDbAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheMovieDbAPI.swift; sourceTree = "<group>"; };
 		E9E585762555C5E30084C71D /* TheMovieDbClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheMovieDbClient.swift; sourceTree = "<group>"; };
+		E9E585782555D27F0084C71D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		E9E585282555BC520084C71D = {
 			isa = PBXGroup;
 			children = (
+				E9E585782555D27F0084C71D /* README.md */,
 				E9E585622555BD5C0084C71D /* Shared */,
 				E9E585342555BC520084C71D /* TheMovieDb */,
 				E9E5853F2555BC520084C71D /* TheMovieDbTests */,
