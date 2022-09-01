@@ -10,7 +10,7 @@
 		E94A564628C1551F007190C0 /* TheMovieDb.docc in Sources */ = {isa = PBXBuildFile; fileRef = E94A564528C1551F007190C0 /* TheMovieDb.docc */; };
 		E94A564C28C1551F007190C0 /* TheMovieDb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94A564128C1551F007190C0 /* TheMovieDb.framework */; };
 		E94A565128C1551F007190C0 /* TheMovieDbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94A565028C1551F007190C0 /* TheMovieDbTests.swift */; };
-		E94A565228C1551F007190C0 /* TheMovieDb.h in Headers */ = {isa = PBXBuildFile; fileRef = E94A564428C1551F007190C0 /* TheMovieDb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E94A565D28C15BAB007190C0 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94A565C28C15BAB007190C0 /* Client.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +25,11 @@
 
 /* Begin PBXFileReference section */
 		E94A564128C1551F007190C0 /* TheMovieDb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TheMovieDb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E94A564428C1551F007190C0 /* TheMovieDb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheMovieDb.h; sourceTree = "<group>"; };
 		E94A564528C1551F007190C0 /* TheMovieDb.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = TheMovieDb.docc; sourceTree = "<group>"; };
 		E94A564B28C1551F007190C0 /* TheMovieDbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMovieDbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E94A565028C1551F007190C0 /* TheMovieDbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDbTests.swift; sourceTree = "<group>"; };
+		E94A565B28C158E1007190C0 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		E94A565C28C15BAB007190C0 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		E94A563728C1551F007190C0 = {
 			isa = PBXGroup;
 			children = (
+				E94A565B28C158E1007190C0 /* Readme.md */,
 				E94A564328C1551F007190C0 /* TheMovieDb */,
 				E94A564F28C1551F007190C0 /* TheMovieDbTests */,
 				E94A564228C1551F007190C0 /* Products */,
@@ -71,8 +73,8 @@
 		E94A564328C1551F007190C0 /* TheMovieDb */ = {
 			isa = PBXGroup;
 			children = (
-				E94A564428C1551F007190C0 /* TheMovieDb.h */,
 				E94A564528C1551F007190C0 /* TheMovieDb.docc */,
+				E94A565C28C15BAB007190C0 /* Client.swift */,
 			);
 			path = TheMovieDb;
 			sourceTree = "<group>";
@@ -92,7 +94,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E94A565228C1551F007190C0 /* TheMovieDb.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94A565D28C15BAB007190C0 /* Client.swift in Sources */,
 				E94A564628C1551F007190C0 /* TheMovieDb.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +362,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -388,6 +391,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -395,6 +399,7 @@
 		E94A565928C1551F007190C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD62EL5GHG;
@@ -410,6 +415,7 @@
 		E94A565A28C1551F007190C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QD62EL5GHG;
